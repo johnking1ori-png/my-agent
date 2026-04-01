@@ -28,7 +28,7 @@ class Message(BaseModel):
 
 
 
-@app.post("/chats")
+@app.post("/api/chats")
 def chats(message: Message):
     
    api_key = os.getenv("API_KEY")
