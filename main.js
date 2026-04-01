@@ -20,7 +20,6 @@ document.querySelector(".js-send-input-button").addEventListener('click', () => 
         const message = {
           message: value,
         }
-        console.log(message);
 
         fetch('/api/chats', {
           method: 'POST',
